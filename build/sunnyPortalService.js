@@ -140,7 +140,7 @@ class SunnyPortalService {
             this.logger.debug('Fetched VIEWSTATEGENERATOR value: ' + viewStateGenerator);
             requestOpts = {
                 headers: {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0',
                 },
                 form: {
                     __VIEWSTATE: viewState,
