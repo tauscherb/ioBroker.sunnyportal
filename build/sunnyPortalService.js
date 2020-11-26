@@ -140,31 +140,25 @@ class SunnyPortalService {
             this.logger.debug('Fetched VIEWSTATEGENERATOR value: ' + viewStateGenerator);
             requestOpts = {
                 headers: {
-                    'User-Agent': 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0'
                 },
                 form: {
-                        __VIEWSTATE: viewState,
-                        __VIEWSTATEGENERATOR: viewStateGenerator,
-                        __EVENTTARGET:"",
-                        __EVENTARGUMENT:"",
-                        ctl00$ContentPlaceHolder1$Logincontrol1$txtUserName: this.username,
-                        ctl00$ContentPlaceHolder1$Logincontrol1$txtPassword: this.password,
-                        ctl00$ContentPlaceHolder1$Logincontrol1$LoginBtn:"Anmelden",
-                        ctl00$ContentPlaceHolder1$Logincontrol1$RedirectURL:"",
-                        ctl00$ContentPlaceHolder1$Logincontrol1$RedirectPlant:"",
-                        ctl00$ContentPlaceHolder1$Logincontrol1$RedirectPage:"",
-                        ctl00$ContentPlaceHolder1$Logincontrol1$RedirectDevice:"",
-                        ctl00$ContentPlaceHolder1$Logincontrol1$RedirectOther:"",
-                        ctl00$ContentPlaceHolder1$Logincontrol1$PlantIdentifier:"",
-                        ctl00$ContentPlaceHolder1$Logincontrol1$ServiceAccess:"true",
-                        ClientScreenWidth:"1920",
-                        ClientScreenHeight:"1080",
-                        ClientScreenAvailWidth:"1920",
-                        ClientScreenAvailHeight:"1040",
-                        ClientWindowInnerWidth:"1920",
-                        ClientWindowInnerHeight:"910",
-                        ClientBrowserVersion:"47",
-                        ctl00$ContentPlaceHolder1$hiddenLanguage:"de-de"
+                    __VIEWSTATE: viewState,
+                    __VIEWSTATEGENERATOR: viewStateGenerator,
+                    __EVENTTARGET: "",
+                    __EVENTARGUMENT: "",
+                    ctl00$ContentPlaceHolder1$Logincontrol1$txtUserName: this.username,
+                    ctl00$ContentPlaceHolder1$Logincontrol1$txtPassword: this.password,
+                    ctl00$ContentPlaceHolder1$Logincontrol1$LoginBtn: "Anmelden",
+                    ctl00$ContentPlaceHolder1$Logincontrol1$RedirectURL: "",
+                    ctl00$ContentPlaceHolder1$Logincontrol1$RedirectPlant: "",
+                    ctl00$ContentPlaceHolder1$Logincontrol1$RedirectPage: "",
+                    ctl00$ContentPlaceHolder1$Logincontrol1$RedirectDevice: "",
+                    ctl00$ContentPlaceHolder1$Logincontrol1$RedirectOther: "",
+                    ctl00$ContentPlaceHolder1$Logincontrol1$PlantIdentifier: "",
+                    ctl00$ContentPlaceHolder1$Logincontrol1$ServiceAccess: "true",
+                    ClientBrowserVersion: "47",
+                    ctl00$ContentPlaceHolder1$hiddenLanguage: "de-de"
                 },
                 jar: this.jar,
             };
@@ -208,7 +202,7 @@ class SunnyPortalService {
         const requestOpts = {
             headers: {
                 // We need to simulate a Browser which the SunnyPortal accepts...here I am Using Firefox 71.0 (64-bit) for Windows
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0'
             },
             form: {
                 __EVENTTARGET: '',
