@@ -47,7 +47,6 @@ class Sunnyportal extends utils.Adapter {
         // Initialize your adapter here
         const ops = new Options(
             this.log,
-            // 300 * 1000, // every 5 minutes
             this.config.sunnyPortalInterval * 1000,
             this.URL,
             this.config.sunnyPortalEmail,

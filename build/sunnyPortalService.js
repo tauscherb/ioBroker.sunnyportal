@@ -11,6 +11,7 @@ class SunnyPortalService {
         this.SET_FILE_DATE_URL = '/FixedPages/InverterSelection.aspx';
         this.CURRENT_PRODUCTION_URL = '/Dashboard?_=1';
         this.DOWNLOAD_RESULTS_URL = '/Templates/DownloadDiagram.aspx?down=diag';
+        this.CURRENT_CONSUMPTION_URL = '/Homan/ConsumerBalance/GetLiveProxyValues';
         this.logger = ops.logger;
         this.url = ops.url;
         this.username = ops.username;
@@ -27,12 +28,15 @@ class SunnyPortalService {
                 method: 'GET',
                 jar: jar,
             };
+            const productionUrl = this.url + this.CURRENT_PRODUCTION_URL;
+            this.logger.debug('Fetching production data via ' + productionUrl);
             // The timestamp is just ignored. Using 1.
-            request(this.url + this.CURRENT_PRODUCTION_URL, requestOpts, (err, httpResponse, body) => {
+            request(productionUrl, requestOpts, (err, httpResponse, body) => {
                 if (err) {
                     this.logger.error('Could not get current production');
                     callback(err);
                 }
+                this.logger.debug('Answer to production call: ' + body);
                 callback(err, JSON.parse(body));
             });
         });
