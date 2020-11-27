@@ -14,7 +14,7 @@ export class SunnyPortalService {
     readonly LOGIN_URL = '/Templates/Start.aspx';
     readonly OPEN_INVERTER_URL = '/FixedPages/InverterSelection.aspx';
     readonly SET_FILE_DATE_URL = '/FixedPages/InverterSelection.aspx';
-    readonly CURRENT_PRODUCTION_URL = '/Dashboard?_=1';
+    readonly CURRENT_PRODUCTION_URL = '/homemanager?t=1';
     readonly DOWNLOAD_RESULTS_URL = '/Templates/DownloadDiagram.aspx?down=diag';
     readonly CURRENT_CONSUMPTION_URL = '/Homan/ConsumerBalance/GetLiveProxyValues'; 
 

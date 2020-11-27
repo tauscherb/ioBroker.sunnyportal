@@ -9,7 +9,7 @@ class SunnyPortalService {
         this.LOGIN_URL = '/Templates/Start.aspx';
         this.OPEN_INVERTER_URL = '/FixedPages/InverterSelection.aspx';
         this.SET_FILE_DATE_URL = '/FixedPages/InverterSelection.aspx';
-        this.CURRENT_PRODUCTION_URL = '/Dashboard?_=1';
+        this.CURRENT_PRODUCTION_URL = '/homemanager?t=1';
         this.DOWNLOAD_RESULTS_URL = '/Templates/DownloadDiagram.aspx?down=diag';
         this.CURRENT_CONSUMPTION_URL = '/Homan/ConsumerBalance/GetLiveProxyValues';
         this.logger = ops.logger;
