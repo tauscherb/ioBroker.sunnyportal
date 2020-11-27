@@ -38,4 +38,8 @@ systemDictionary = {
         "pl": "hasło",
         "zh-cn": "密码"
     },
+    sunnyPortalInterval: {
+        "en": "Update interval",
+        "de": "Update-Intervall",
+    }
 };
